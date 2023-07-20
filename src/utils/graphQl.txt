@@ -1,0 +1,137 @@
+////////////prototype 1
+query MyQuery2 {
+  categories {
+    nodes {
+      name
+      posts {
+        nodes {
+          id
+          content
+          featuredImage {
+            node {
+              sourceUrl
+              mediaItemUrl
+            }
+          }
+          author {
+            node {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////prototype 2
+
+query MyQuery3 {
+  categories {
+    nodes {
+      name
+      posts {
+        nodes {
+          id
+          content
+          commentCount
+          date
+          title
+          comments {
+            nodes {
+              id
+              content
+            }
+          }
+          featuredImage {
+            node {
+              sourceUrl
+              mediaItemUrl
+            }
+          }
+          author {
+            node {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}
+   
+//////////prototype 3
+query MyQuery3 {
+  categories {
+    nodes {
+      slug
+      name
+      posts {
+        nodes {
+          id
+          content
+          commentCount
+          date
+          title
+          comments {
+            nodes {
+              id
+              content
+            }
+          }
+          featuredImage {
+            node {
+              sourceUrl
+              mediaItemUrl
+            }
+          }
+          author {
+            node {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/////////prototype 4
+query MyQuery3 {
+  categories {
+    nodes {
+      databaseId
+      description
+      slug
+      name
+      posts {
+        nodes {
+          databaseId
+          content
+          commentCount
+          date
+          title
+          comments {
+            nodes {
+              databaseId
+              content
+            }
+          }
+          featuredImage {
+            node {
+              databaseId
+              sourceUrl
+              mediaItemUrl
+            }
+          }
+          author {
+            node {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}
+   
+   
